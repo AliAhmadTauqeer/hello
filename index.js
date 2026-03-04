@@ -15,7 +15,7 @@ const makeCommit = n => {
     }
 
     const DATE = moment()
-        .subtract(getRandomInt(0, 365), "days")
+        .subtract(getRandomInt(0, 730), "days")
         .format();
 
     const data = { date: DATE };
@@ -29,4 +29,4 @@ const makeCommit = n => {
     });
 };
 
-makeCommit(300);
+makeCommit(700);
